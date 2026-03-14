@@ -1,0 +1,1 @@
+praktikum minngu 1
