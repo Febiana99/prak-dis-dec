@@ -24,12 +24,12 @@ Yang saya jalankan yaitu notepad
 
 3. me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang dijalankan, jangan gunakan perintah untuk keluar dari aplikasi yang dijalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang dijalankan.
    
-    Tampilan sebelum end task
+   Tampilan sebelum end task
       <p align="center">
    <img src="3.jpeg" width="500">
  </p>
 
-    Tampilan Setelah end task 
+   Tampilan Setelah end task 
     
    <p align="center">
   <img src="4.jpeg" width="500">
