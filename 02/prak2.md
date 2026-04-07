@@ -1,9 +1,12 @@
 **Praktikum Sistem Terdistribusi dan Terdesentralisasi Pert02**
 
 Nama : Febiana Serao Da Cruz
+
 NIM  : 235410032
 
+
 **Proses Pada Satu Node**
+
 Tugas :
 1.	Tampilkan berbagai proses yang ada pada komputer yang anda gunakan sesuai dengan sistem operasi yang anda gunakan.
 
@@ -35,6 +38,7 @@ TampilanSetelah meng end task
 
 
 4.	Jelaskan semua hal yang anda kerjakan tersebut?
+   
 Jawaban :
 
 
@@ -56,7 +60,10 @@ Awalnya saya menampilkan semua proses yang berjalan di Task Manager, kemudian me
 
 
 
+
 **Komunikasi Antar Proses pada Sistem Terdistribusi**
+
+
 
 
 Membuat Workspace
@@ -92,9 +99,12 @@ Tampilan setelah server berhasil dijalankan, dilakukan pengujian melalui browser
    <img src="8.jpeg" width="500">
  </p>
 
-       <p align="center">
+   <p align="center">
    <img src="9.jpeg" width="500">
  </p>
+
+
+
 
 
 
