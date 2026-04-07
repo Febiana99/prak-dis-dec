@@ -20,7 +20,7 @@ Gambar 1: Proses pada Windows
 Yang saya jalankan yaitu notepad
 
    <p align="center">
-  <img src="2.jpeg" width="500">
+  <img src="2.jpeg" width="400">
 </p>
 
 <p align="center">
