@@ -29,7 +29,8 @@ Yang saya jalankan yaitu notepad
    <img src="3.jpeg" width="500">
  </p>
 
-    Tampilan Setelah end task 
+   Tampilan Setelah end task 
+    
    <p align="center">
   <img src="4.jpeg" width="500">
 </p>
