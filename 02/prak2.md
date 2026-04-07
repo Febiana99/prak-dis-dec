@@ -36,6 +36,7 @@ Setelah meng end task : dengan sendrinya akan terkluar sendri notepadnya
 
 4.	Jelaskan semua hal yang anda kerjakan tersebut?
 Jawaban :
+
 Awalnya saya menampilkan semua proses yang berjalan di Task Manager, kemudian menjalankan aplikasi Notepad dan melihat bahwa muncul proses baru sesuai dengan aplikasi yang dijalankan. Setelah itu, saya mencoba mematikan proses tersebut dengan cara memilih aplikasi Notepad di Task Manager lalu menekan tombol End Task. Setelah proses diakhiri, aplikasi Notepad secara otomatis tertutup tanpa menggunakan tombol keluar pada aplikasi. Hal ini menunjukkan bahwa proses dapat dikendalikan langsung melalui sistem operasi.
 
 
@@ -62,7 +63,7 @@ Tampilan pada saat mengaktifkan virtual environment dengan perintah .venv\Script
 
 isi schema.py
    <p align="center">
-  <img src="13.png" width="500">
+  <img src="13.jpeg" width="500">
 </p>
 
 
@@ -82,13 +83,20 @@ Tampilan setelah server berhasil dijalankan, dilakukan pengujian melalui browser
  </p>
 
 
+
 Tugas :
+
 Buatlah client menggunakan bahasa pemrograman bebas. Client tersebut mengakses GraphQL server yang sudah dibuat di atas.
 
 Jawaban :
 Tampilan pada saat mengaktifkan virtual environment dengan perintah .venv\Scripts\activate, sehingga environment siap digunakan dan ditandai dengan munculnya (workspace-01). Selanjutnya ditampilkan proses pembuatan file client.py yang digunakan sebagai client untuk mengakses server GraphQL.
    <p align="center">
   <img src="10.png" width="500">
+</p>
+
+isi file client.py
+  <p align="center">
+  <img src="14.jpeg" width="500">
 </p>
 
 
