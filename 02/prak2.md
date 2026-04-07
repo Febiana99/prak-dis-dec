@@ -19,14 +19,14 @@ Yang saya jalankan yaitu notepad
    <img src="2.jpeg" width="500">
 </p>
 
-3. me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang dijalankan, jangan gunakan perintah untuk keluar dari aplikasi yang dijalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang dijalankan. 
-
+3. me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang dijalankan, jangan gunakan perintah untuk keluar dari aplikasi yang dijalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang dijalankan.
+   
+Tampilan sebelum end task
       <p align="center">
    <img src="3.jpeg" width="500">
  </p>
 
-Setelah meng end task : dengan sendrinya akan terkluar sendri notepadnya
- 
+TampilanSetelah meng end task 
    <p align="center">
   <img src="4.jpeg" width="500">
 </p>
@@ -36,6 +36,7 @@ Setelah meng end task : dengan sendrinya akan terkluar sendri notepadnya
 
 4.	Jelaskan semua hal yang anda kerjakan tersebut?
 Jawaban :
+
 
 Awalnya saya menampilkan semua proses yang berjalan di Task Manager, kemudian menjalankan aplikasi Notepad dan melihat bahwa muncul proses baru sesuai dengan aplikasi yang dijalankan. Setelah itu, saya mencoba mematikan proses tersebut dengan cara memilih aplikasi Notepad di Task Manager lalu menekan tombol End Task. Setelah proses diakhiri, aplikasi Notepad secara otomatis tertutup tanpa menggunakan tombol keluar pada aplikasi. Hal ini menunjukkan bahwa proses dapat dikendalikan langsung melalui sistem operasi.
 
@@ -50,7 +51,13 @@ Awalnya saya menampilkan semua proses yang berjalan di Task Manager, kemudian me
 
 
 
+
+
+
+
+
 **Komunikasi Antar Proses pada Sistem Terdistribusi**
+
 
 Membuat Workspace
    <p align="center">
@@ -93,9 +100,11 @@ Tampilan setelah server berhasil dijalankan, dilakukan pengujian melalui browser
 
 Tugas :
 
+
 Buatlah client menggunakan bahasa pemrograman bebas. Client tersebut mengakses GraphQL server yang sudah dibuat di atas.
 
 Jawaban :
+
 Tampilan pada saat mengaktifkan virtual environment dengan perintah .venv\Scripts\activate, sehingga environment siap digunakan dan ditandai dengan munculnya (workspace-01). Selanjutnya ditampilkan proses pembuatan file client.py yang digunakan sebagai client untuk mengakses server GraphQL.
    <p align="center">
   <img src="10.png" width="500">
