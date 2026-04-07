@@ -5,14 +5,22 @@ Nama : Febiana Serao Da Cruz
 NIM  : 235410032
 
 Tugas :
-1.	Tampilkan berbagai proses yang ada pada komputer yang anda gunakan sesuai dengan sistem operasi yang anda gunakan. 
+1.	Tampilkan berbagai proses yang ada pada komputer yang anda gunakan sesuai dengan sistem operasi yang anda gunakan.
+
+   <p align="center">
+  <img src="1.png" width="500">
+</p>
+
+<p align="center">
+Gambar 1: Proses pada Windows
+</p>
  
 
-2.	Jalankan salah satu aplikasi, perlihatkan proses yang dimunculkan oleh aplikasi tesebut. 
+3.	Jalankan salah satu aplikasi, perlihatkan proses yang dimunculkan oleh aplikasi tesebut. 
 Yang saya jalankan yaitu notepad 
  
 
-3.	Carilah petunjuk untuk: me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang anda jalankan, jangan gunakan perintah untuk keluar dari aplikasi yang anda jalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang anda jalankan. 
+4.	Carilah petunjuk untuk: me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang anda jalankan, jangan gunakan perintah untuk keluar dari aplikasi yang anda jalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang anda jalankan. 
 
  
 
