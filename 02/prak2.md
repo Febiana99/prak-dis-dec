@@ -21,8 +21,8 @@ Yang saya jalankan yaitu notepad
 
 3. Carilah petunjuk untuk: me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang anda jalankan, jangan gunakan perintah untuk keluar dari aplikasi yang anda jalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang anda jalankan. 
 
-    <p align="center">
-  <img src="3.jpeg" width="500">
+   <p align="center">
+<img src="3.jpeg" width="500">
 </p>
 
 Setelah meng end task : dengan sendrinya akan terkluar sendri notepadnya
