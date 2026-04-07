@@ -15,9 +15,9 @@ Tugas :
 2. Jalankan salah satu aplikasi, perlihatkan proses yang dimunculkan oleh aplikasi tesebut. 
 Yang saya jalankan yaitu notepad
 
-       <p align="center">
-      <img src="2.jpeg" width="500">
-   </p>
+    <p align="center">
+   <img src="2.jpeg" width="500">
+</p>
 
 3. Carilah petunjuk untuk: me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang anda jalankan, jangan gunakan perintah untuk keluar dari aplikasi yang anda jalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang anda jalankan. 
 
