@@ -44,7 +44,14 @@ Awalnya saya menampilkan semua proses yang berjalan di Task Manager, kemudian me
 
 
 
+
+
+
+
+
+
 **Komunikasi Antar Proses pada Sistem Terdistribusi**
+
 Membuat Workspace
    <p align="center">
   <img src="5.png" width="500">
