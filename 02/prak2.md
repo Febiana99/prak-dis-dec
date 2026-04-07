@@ -8,7 +8,7 @@ Tugas :
 1.	Tampilkan berbagai proses yang ada pada komputer yang anda gunakan sesuai dengan sistem operasi yang anda gunakan.
 
    <p align="center">
-  <img src="1.png" width="500">
+  <img src="1.jpeg" width="500">
 </p>
 
 <p align="center">
