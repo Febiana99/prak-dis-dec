@@ -24,12 +24,12 @@ Yang saya jalankan yaitu notepad
 
 3. me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang dijalankan, jangan gunakan perintah untuk keluar dari aplikasi yang dijalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang dijalankan.
    
-Tampilan sebelum end task
+    Tampilan sebelum end task
       <p align="center">
    <img src="3.jpeg" width="500">
  </p>
 
-TampilanSetelah meng end task 
+    Tampilan Setelah end task 
    <p align="center">
   <img src="4.jpeg" width="500">
 </p>
@@ -95,9 +95,6 @@ Tampilan pada saat menjalankan server GraphQL menggunakan perintah uvicorn, sehi
  
 
 Tampilan setelah server berhasil dijalankan, dilakukan pengujian melalui browser dengan memasukkan query untuk mengambil data buku berupa title dan author. Query tersebut berhasil dijalankan dan menampilkan data sesuai dengan yang terdapat pada file schema.py.
-      <p align="center">
-   <img src="8.jpeg" width="500">
- </p>
 
    <p align="center">
    <img src="9.jpeg" width="500">
