@@ -11,31 +11,18 @@ Tugas :
   <img src="1.jpeg" width="500">
 </p>
 
-<p align="center">
-Gambar 1: Proses pada Windows
-</p>
- 
 
 2. Jalankan salah satu aplikasi, perlihatkan proses yang dimunculkan oleh aplikasi tesebut. 
 Yang saya jalankan yaitu notepad
 
    <p align="center">
-  <img src="2.jpeg" width="400">
+  <img src="2.jpeg" width="300">
 </p>
-
-<p align="center">
-Gambar 1: Proses pada Windows
-</p>
- 
 
 3. Carilah petunjuk untuk: me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang anda jalankan, jangan gunakan perintah untuk keluar dari aplikasi yang anda jalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang anda jalankan. 
 
     <p align="center">
   <img src="3.jpeg" width="500">
-</p>
-
-<p align="center">
-Gambar 1: Proses pada Windows
 </p>
 
 Setelah meng end task : dengan sendrinya akan terkluar sendri notepadnya
@@ -44,9 +31,6 @@ Setelah meng end task : dengan sendrinya akan terkluar sendri notepadnya
   <img src="4.jpeg" width="500">
 </p>
 
-<p align="center">
-Gambar 1: Proses pada Windows
-</p>
 
 
 
@@ -64,14 +48,10 @@ Awalnya saya menampilkan semua proses yang berjalan di Task Manager, kemudian me
    <p align="center">
   <img src="5.png" width="500">
 </p>
-
    <p align="center">
   <img src="6.png" width="500">
 </p>
 
-<p align="center">
-Gambar 1: Proses pada Windows
-</p>
  
 
  
