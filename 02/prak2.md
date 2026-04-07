@@ -21,9 +21,9 @@ Yang saya jalankan yaitu notepad
 
 3. Carilah petunjuk untuk: me-restart proses dan mematikan proses. Matikan proses yang dimunculkan oleh aplikasi yang anda jalankan, jangan gunakan perintah untuk keluar dari aplikasi yang anda jalankan tetapi gunakan perintah untuk mematikan proses dari aplikasi yang anda jalankan. 
 
-   <p align="center">
-<img src="3.jpeg" width="500">
-</p>
+      <p align="center">
+   <img src="3.jpeg" width="500">
+ </p>
 
 Setelah meng end task : dengan sendrinya akan terkluar sendri notepadnya
  
@@ -51,17 +51,22 @@ Awalnya saya menampilkan semua proses yang berjalan di Task Manager, kemudian me
    <p align="center">
   <img src="6.png" width="500">
 </p>
-
+   <p align="center">
+  <img src="7.png" width="500">
+</p>
  
-
- 
-
 Penjelasan : 
 Pada bagian ini terlebih dahulu dibuat file schema.py yang berfungsi sebagai server GraphQL, dimana di dalamnya didefinisikan tipe data Book yang memiliki atribut title dan author serta query untuk menampilkan data buku. Setelah itu dilakukan instalasi library strawberry-graphql menggunakan perintah uv pip install "strawberry-graphql[cli]". Selanjutnya server dijalankan menggunakan perintah uvicorn schema:app --reload sehingga server dapat berjalan dan siap digunakan.
 
 
 Isi file schema.py
 
+   <p align="center">
+  <img src="8.jpeg" width="500">
+</p>
+   <p align="center">
+  <img src="9.jpeg" width="500">
+</p>
 
 Penjelasan :
 Setelah server berhasil dijalankan, dilakukan pengujian melalui browser dengan memasukkan query untuk mengambil data buku berupa title dan author. Query tersebut berhasil dijalankan dan menampilkan data sesuai dengan yang terdapat pada file schema.py.
@@ -82,8 +87,12 @@ Buatlah client menggunakan bahasa pemrograman bebas. Client tersebut mengakses G
 
 Jawaban :
 
- 
-
+   <p align="center">
+  <img src="10.png" width="500">
+</p>
+   <p align="center">
+  <img src="11.png" width="500">
+</p>
  
 
 Penjelasan :
