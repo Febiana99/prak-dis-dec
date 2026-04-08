@@ -9,10 +9,8 @@ NIM  : 235410032
 
 Tugas :
 1.	Tampilkan berbagai proses yang ada pada komputer yang anda gunakan sesuai dengan sistem operasi yang anda gunakan.
-
    <p align="center">
-![1](https://github.com/user-attachments/assets/cb8847b0-ee51-4014-9935-9ed442508657)
-
+   <img src="1.jpeg" width="500">
 </p>
 
 
