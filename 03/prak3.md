@@ -1,6 +1,6 @@
 **Praktikum Sistem Terdistribusi dan Terdesentralisasi Pert02**
 
-Nama : Febiana Serao Da Cruz
+Nama : Febiana Serao Da Cruz<br>
 NIM: 235410032
 
 **Sinkronisasi Waktu**
