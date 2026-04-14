@@ -23,7 +23,7 @@ outputnya :<br>
   <img width="495" height="446" alt="image" src="https://github.com/user-attachments/assets/2ec64ee2-ff86-4dbe-b737-d6900afcb088" />
 
 penjelsanan :<br>
-Dari hasil program vector clock terlihat bahwa setiap proses memiliki pencatat waktu masing-masing yang berubah setiap kali terjadi event. Pada awalnya semua proses bernilai nol, kemudian ketika proses 0 melakukan event lokal nilainya bertambah. Saat proses 0 mengirim pesan ke proses 1, nilai vector clock ikut dikirim dan proses 1 menyesuaikan nilainya dengan mengambil nilai terbesar dari clock yang diterima lalu menambah 1 pada prosesnya sendiri. Jika dilakukan manual, langkahnya sama yaitu setiap kejadian dicatat satu per satu, lalu saat menerima pesan setiap indeks dibandingkan dan dipilih nilai maksimum. Dengan cara ini urutan kejadian antar proses dapat diketahui secara tepat.
+Dari hasil program vector clock terlihat bahwa setiap proses memiliki pencatat waktu masing-masing yang berubah setiap kali terjadi event. Pada awalnya semua proses bernilai nol, kemudian ketika proses 0 melakukan event lokal nilainya bertambah. Saat proses 0 mengirim pesan ke proses 1, nilai vector clock ikut dikirim dan proses 1 menyesuaikan nilainya dengan mengambil nilai terbesar dari clock yang diterima lalu menambah 1 pada prosesnya sendiri. Jika dilakukan manual, langkahnya sama yaitu setiap kejadian dicatat satu per satu, lalu saat menerima pesan setiap indeks dibandingkan dan dipilih nilai maksimum. 
 
 2. - modul Python **vectorclock.py**<br>
      <img width="450" height="463" alt="image" src="https://github.com/user-attachments/assets/258aa373-07b5-4357-b149-0e548aa9f6b2" />
@@ -41,11 +41,11 @@ Class VectorClock dibuat menjadi modul Python dengan memisahkan class ke file te
 **Problem tanpa sinkronisasi**<br>
 program **multithreaded-example.py**<br>
 <p align="center">
-  <img width="600" height="682" alt="image" src="https://github.com/user-attachments/assets/a71e1412-65fc-4321-84d5-acb0fdc8bbb3" />
+  <img width="500" height="682" alt="image" src="https://github.com/user-attachments/assets/a71e1412-65fc-4321-84d5-acb0fdc8bbb3" />
 
 outputnya :<br>
 <p align="center">
-  <img width="700" height="582" alt="image" src="https://github.com/user-attachments/assets/94caea98-4a71-426e-a422-5c9860af5d9d" />
+  <img width="500" height="582" alt="image" src="https://github.com/user-attachments/assets/94caea98-4a71-426e-a422-5c9860af5d9d" />
 
 penjelasan :<br>
 Output program bisa berbeda karena semua thread berjalan secara bersamaan dalam waktu yang sama.
@@ -53,16 +53,63 @@ Setiap thread mendapat giliran eksekusi dari sistem operasi secara bergantian.Ur
 
 **Data Race/Race Conditions**<br>
 1. program **race-conditions-01.py**<br>
-   
+   <p align="center">
+     <img width="500" height="415" alt="image" src="https://github.com/user-attachments/assets/072dd11c-6f3f-4520-a85e-bdf392ca53f6" />
+
    
    
 2. program **race-conditions-02.py**<br>
+   <p align="center">
+     <img width="500" height="477" alt="image" src="https://github.com/user-attachments/assets/7db09a62-6493-4d99-ac0a-2b00c2d8c14f" />
+
+   outputnya : <br>
+    <p align="center">
+      <img width="500" height="82" alt="image" src="https://github.com/user-attachments/assets/ba30e369-592a-4583-9c95-09d7ea6027ac" />
+
+   penjelasan :<br>
+Race condition tidak terjadi karena program sudah menggunakan lock untuk mengatur akses ke saldo. Dengan adanya lock, hanya satu thread yang bisa masuk lebih dulu, sedangkan thread lain harus menunggu.
+   
+
+
 
 **Deadlock**<br>
 1. program **deadlock-01.py**<br>
-2. program **deadlock-02.py**<br>
+   <p align="center">
+     <img width="500" height="727" alt="image" src="https://github.com/user-attachments/assets/a436dc59-a70b-472b-96ba-b09267b99737" />
+
+3. program **deadlock-02.py**<br>
+   <p align="center">
+     <img width="500" height="880" alt="image" src="https://github.com/user-attachments/assets/3b6bc86b-af3b-4464-a057-979487e283b8" />
+
+   outpurnya :<br>
+   <p align="center">
+     <img width="500" height="187" alt="image" src="https://github.com/user-attachments/assets/9bb0f06a-7e95-4db9-92a0-38acd0ab7162" />
+   
+   penjelasan :<br>
+Deadlock tidak terjadi karena kedua thread masih bisa mendapatkan lock yang dibutuhkan dan melanjutkan prosesnya. Meskipun sempat saling menunggu, sistem tetap memberi jalan agar salah satu thread selesai lebih dulu. Setelah itu thread lainnya ikut berjalan sampai program selesai.
+
 
 **Algoritma Raft**<br>
+1. program **raft.py**:<br>
+   <p align="center">
+     <img width="540" height="763" alt="image" src="https://github.com/user-attachments/assets/8fc49a67-cbd4-4fd5-b504-c8a0eb0fe5d7" /><br>
+    <p align="center">
+      <img width="540" height="812" alt="image" src="https://github.com/user-attachments/assets/891d5d1c-de7d-4863-9cad-26a1555320a6" /><br>
+    <p align="center">
+      <img width="540" height="597" alt="image" src="https://github.com/user-attachments/assets/9ecedce0-6d7d-4301-a2a2-81f06b57d24b" />
+
+
+
+2. - modul Python **raft_modul**<br>
+     <p align="center">
+       <img width="559" height="693" alt="image" src="https://github.com/user-attachments/assets/bcc56b64-8699-44ba-b511-cb6b420a60f1" />
+
+   - **test_raft**<br>
+     <p align="center">
+       <img width="450" height="252" alt="image" src="https://github.com/user-attachments/assets/582da36c-45fc-47ff-b49b-33c241ef61b5" />
+
+       
+
 
 
 
