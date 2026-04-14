@@ -56,9 +56,13 @@ Setiap thread mendapat giliran eksekusi dari sistem operasi secara bergantian.Ur
    <p align="center">
      <img width="500" height="415" alt="image" src="https://github.com/user-attachments/assets/072dd11c-6f3f-4520-a85e-bdf392ca53f6" />
 
+    penjelasan :<br>
+    <p align="center">
+    <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/74682296-2899-4d92-bf62-073969f6c112" /><br>
+    Dua thread membaca saldo bersamaan sebelum saldo diperbarui, sehingga keduanya sama-sama menganggap uang cukup.
+    
    
-   
-2. program **race-conditions-02.py**<br>
+3. program **race-conditions-02.py**<br>
    <p align="center">
      <img width="500" height="477" alt="image" src="https://github.com/user-attachments/assets/7db09a62-6493-4d99-ac0a-2b00c2d8c14f" />
 
@@ -75,7 +79,12 @@ Race condition tidak terjadi karena program sudah menggunakan lock untuk mengatu
 **Deadlock**<br>
 1. program **deadlock-01.py**<br>
    <p align="center">
-     <img width="500" height="727" alt="image" src="https://github.com/user-attachments/assets/a436dc59-a70b-472b-96ba-b09267b99737" />
+     <img width="500" height="727" alt="image" src="https://github.com/user-attachments/assets/a436dc59-a70b-472b-96ba-b09267b99737" /><br>
+     
+  penjelasan :<br>
+     <p align="center">
+       <img width="400" height="634" alt="image" src="https://github.com/user-attachments/assets/1cfacf6c-8d6a-4cd2-a235-d73186d19961" />
+
 
 3. program **deadlock-02.py**<br>
    <p align="center">
@@ -96,10 +105,13 @@ Deadlock tidak terjadi karena kedua thread masih bisa mendapatkan lock yang dibu
     <p align="center">
       <img width="540" height="812" alt="image" src="https://github.com/user-attachments/assets/891d5d1c-de7d-4863-9cad-26a1555320a6" /><br>
     <p align="center">
-      <img width="540" height="597" alt="image" src="https://github.com/user-attachments/assets/9ecedce0-6d7d-4301-a2a2-81f06b57d24b" />
+      <img width="540" height="597" alt="image" src="https://github.com/user-attachments/assets/9ecedce0-6d7d-4301-a2a2-81f06b57d24b" /><br>
+  
+  penjelasan : <br>
+   <p align="center">
+       <img width="400" height="943" alt="image" src="https://github.com/user-attachments/assets/13161231-fb9c-46da-bde0-e2da71f66431" /><br>
 
-
-
+  
 2. - modul Python **raft_modul**<br>
      <p align="center">
        <img width="559" height="693" alt="image" src="https://github.com/user-attachments/assets/bcc56b64-8699-44ba-b511-cb6b420a60f1" />
