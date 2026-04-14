@@ -3,7 +3,7 @@
 Nama : Febiana Serao Da Cruz<br>
 NIM: 235410032
 
-**Sinkronisasi Waktu**
+**Sinkronisasi Waktu**<br>
 <img width="790" height="564" alt="image" src="https://github.com/user-attachments/assets/509f47f9-8743-4ec9-8375-783d890259bd" />
 
 penjelasan :
