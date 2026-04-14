@@ -86,7 +86,7 @@ Race condition tidak terjadi karena program sudah menggunakan lock untuk mengatu
        <img width="400" height="634" alt="image" src="https://github.com/user-attachments/assets/1cfacf6c-8d6a-4cd2-a235-d73186d19961" />
 
 
-3. program **deadlock-02.py**<br>
+2. program **deadlock-02.py**<br>
    <p align="center">
      <img width="500" height="880" alt="image" src="https://github.com/user-attachments/assets/3b6bc86b-af3b-4464-a057-979487e283b8" />
 
