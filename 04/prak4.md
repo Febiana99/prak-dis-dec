@@ -22,6 +22,7 @@ Pada bagian ini dilakukan koneksi ke database menggunakan psql. Kemudian digunak
 <img width="600" height="173" alt="image" src="https://github.com/user-attachments/assets/3ba37e25-83f6-436a-9dc4-c52c4c40cd4a" />
 Hasil t menunjukkan bahwa server tersebut berada dalam kondisi replica<br>
 
+
 **sebelum pembuatan tabel**<br>
 <img width="600" height="118" alt="image" src="https://github.com/user-attachments/assets/cd11a78e-8f67-4c4d-9930-61a84f7c5da6" />
 
@@ -37,7 +38,6 @@ Secara otomatis, manipulasi data tersebut akan direplikasi ke server replica:<br
 
 
 **High-Availability**<br>
-
 Setelah diketahui bahwa primary server dalam kondisi down, maka kita bisa mempromosikan salah satu replica server untuk menjadi primary - dari kondisi hanya bisa menyediakan akses read menjadi primary server yang bisa menyediakan akses read-write. Berikut adalah perintah pg_promote() untuk mempromosikan replica menjadi primary:<br>
 
 <img width="550" height="575" alt="image" src="https://github.com/user-attachments/assets/7fb543ab-bb8b-48f5-983e-da49ef99ea0c" />
