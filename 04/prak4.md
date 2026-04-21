@@ -1,4 +1,4 @@
-<h1>Praktikum Sistem Terdistribusi dan Terdesentralisasi Pert03</h1>
+<h1>Praktikum Sistem Terdistribusi dan Terdesentralisasi Pert04</h1>
 <h3>Nama : Febiana Serao Da Cruz</h3>
 <h3>NIM: 235410032</h3>
 
@@ -53,6 +53,7 @@ mematikan semua primary dan replika :<br>
 
 **Inisialisasi cluster**<br>
 <img width="600" height="394" alt="image" src="https://github.com/user-attachments/assets/26f97f96-0780-42a5-a1d3-cb56f07fa6e5" />
+Pada bagian ini mulai menjalankan container Apache Ignite sebagai database terdistribusi.
 
 **eksekusi perintah-perintah sql**<br>
 <img width="600" height="625" alt="image" src="https://github.com/user-attachments/assets/62363f15-b6ab-4255-8aa7-015dc2fc5096" /><br>
@@ -79,8 +80,7 @@ pemeriksaan http://localhost:10302:<br>
 
 Node ini ternyata juga telah berisi data. Dengan demikian kita bisa melihat bahwa telah terjadi replikasi Master-Master pada cluster Apache Ignite 3.1.0.<br>
 
-Matikan semua node:
-<img width="600" height="256" alt="image" src="https://github.com/user-attachments/assets/a762828e-e726-46e4-8e71-fa1464128679" />
+
 
 
 
