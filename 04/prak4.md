@@ -79,6 +79,7 @@ query untuk analytics:<br>
 
 pemeriksaan http://localhost:10302:<br>
 <img width="600" height="616" alt="image" src="https://github.com/user-attachments/assets/fbafe658-4a68-4c9e-a6b4-8926bd7d6469" /><br>
+
 Node ini ternyata juga telah berisi data. Dengan demikian kita bisa melihat bahwa telah terjadi replikasi Master-Master pada cluster Apache Ignite 3.1.0.<br>
 
 
