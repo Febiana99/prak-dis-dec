@@ -3,6 +3,23 @@
 <h3>NIM: 235410032</h3>
 
 **4.1 treaming Replication Menggunakan PostgreSQL**<br>
+**Struktur Direktori dan File**<br>
+<img width="1055" height="354" alt="image" src="https://github.com/user-attachments/assets/d74e8204-1fd1-406c-9d2d-767a7225096e" /><br>
+
+00_init.sql<br>
+<p align="center">
+  <img width="666" height="135" alt="image" src="https://github.com/user-attachments/assets/406234dc-e83f-43c3-8dfc-7112e3f5aed8" />
+
+docker-compose.yaml<br>
+<p align="center">
+  <img width="600" height="807" alt="image" src="https://github.com/user-attachments/assets/cd501232-6074-406f-a32b-b880f8b32844" /><br>
+<p align="center">
+  <img width="600" height="565" alt="image" src="https://github.com/user-attachments/assets/d1a70834-0819-4280-822a-5a73828d2b65" /><br>
+
+env.sh<br>
+<p align="center">
+  <img width="603" height="271" alt="image" src="https://github.com/user-attachments/assets/d70c1115-d855-48b0-b1a4-a579f2bfd2ba" /><br>
+
 **Menjalankan docker-compose**<br>
 <p align="center">
   <img width="600" height="175" alt="image" src="https://github.com/user-attachments/assets/275a8abe-998c-473e-8ebc-64ef450d3635" />
