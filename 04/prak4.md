@@ -20,24 +20,26 @@ Setelah container dijalankan, dilakukan pengecekan menggunakan perintah docker p
 Pada bagian ini dilakukan koneksi ke database menggunakan psql. Kemudian digunakan perintah \x untuk mengubah tampilan hasil query menjadi lebih rapi, sehingga data lebih mudah dibaca saat ditampilkan.
 
 <img width="600" height="173" alt="image" src="https://github.com/user-attachments/assets/3ba37e25-83f6-436a-9dc4-c52c4c40cd4a" />
-Hasil t menunjukkan bahwa server tersebut berada dalam kondisi replica
+Hasil t menunjukkan bahwa server tersebut berada dalam kondisi replica<br>
 
 **sebelum pembuatan tabel**<br>
 <img width="600" height="118" alt="image" src="https://github.com/user-attachments/assets/cd11a78e-8f67-4c4d-9930-61a84f7c5da6" />
 
 
-**Manipulasi data pada primary**
+**Manipulasi data pada primary**<br>
 pada bagian ini dilakukan pembuatan tabel mahasiswa di server primary. Tabel ini digunakan untuk pengujian replikasi data antar server.
 <img width="750" height="475" alt="image" src="https://github.com/user-attachments/assets/c600046c-bd0f-484f-8a47-6cd99ead5c4b" /><br>
 Data yang sudah dimasukkan kemudian dicek menggunakan SELECT * FROM mahasiswa; dan hasilnya berhasil tampil sesuai input.<br>
 
 
-Secara otomatis, manipulasi data tersebut akan direplikasi ke server replica:
+Secara otomatis, manipulasi data tersebut akan direplikasi ke server replica:<br>
 <img width="600" height="223" alt="image" src="https://github.com/user-attachments/assets/57b42315-0871-4337-bbbf-bc5c2a881bef" />
 
 
-**High-Availability**
+**High-Availability**<br>
+
 Setelah diketahui bahwa primary server dalam kondisi down, maka kita bisa mempromosikan salah satu replica server untuk menjadi primary - dari kondisi hanya bisa menyediakan akses read menjadi primary server yang bisa menyediakan akses read-write. Berikut adalah perintah pg_promote() untuk mempromosikan replica menjadi primary:<br>
+
 <img width="550" height="575" alt="image" src="https://github.com/user-attachments/assets/7fb543ab-bb8b-48f5-983e-da49ef99ea0c" />
 
 mematikan semua primary dan replika :<br>
