@@ -22,7 +22,7 @@ Pada bagian ini dilakukan koneksi ke database menggunakan psql. Kemudian digunak
 <img width="600" height="173" alt="image" src="https://github.com/user-attachments/assets/3ba37e25-83f6-436a-9dc4-c52c4c40cd4a" />
 Hasil t menunjukkan bahwa server tersebut berada dalam kondisi replica
 
-**sebelum pembuatan tabel**<br
+**sebelum pembuatan tabel**<br>
 <img width="600" height="118" alt="image" src="https://github.com/user-attachments/assets/cd11a78e-8f67-4c4d-9930-61a84f7c5da6" />
 
 
