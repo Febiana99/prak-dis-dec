@@ -16,14 +16,14 @@ Perintah ls -la digunakan untuk menampilkan seluruh file dan folder termasuk fil
    <img width="828" height="320" alt="image" src="https://github.com/user-attachments/assets/b73e1bd1-00e2-4c7f-9bdf-42d850511494" /><br>
 
 pembahasan :<br>
-Perintah uv pip install -e . digunakan untuk menginstall seluruh dependency project berdasarkan file konfigurasi pyproject.toml. Opsi -e berarti editable mode sehingga project tetap terhubung dengan source code asli dan perubahan kode dapat langsung digunakan.<br>
+Perintah uv pip install -e . digunakan untuk menginstall seluruh dependency project berdasarkan file konfigurasi. Opsi -e berarti editable mode sehingga project tetap terhubung dengan source code asli dan perubahan kode dapat langsung digunakan.<br>
 
 menjalankan aplikasi tersebut setelah inisialisasi database :<br>
 <p align="center">
     <img width="669" height="259" alt="image" src="https://github.com/user-attachments/assets/a31ce4f5-9bf0-4cb8-b6ea-843c27bd7c20" /><br>
 
 pembahasan :<br>
-Perintah flask --app flaskr init-db digunakan untuk membuat database awal aplikasi Flask berupa SQLite yang berfungsi menyimpan data pengguna, autentikasi, dan post blog. 
+Perintah flask --app flaskr init-db digunakan untuk membuat database awal aplikasi Flask yang berfungsi menyimpan data pengguna, autentikasi, dan post blog. 
 Sedangkan perintah flask --app flaskr run menjalankan aplikasi Flask secara lokal pada 127.0.0.1:5000 sehingga aplikasi dapat diuji melalui browser dengan fitur register dan login.<br>
 
 hasil saat aplikasi berjalan di browser :<br>
@@ -52,11 +52,12 @@ Tampilan setelah Login<br>
    <img width="823" height="243" alt="image" src="https://github.com/user-attachments/assets/c380a605-d18b-4fda-96a0-3732eff2461f" /><br>
 
 pembahasan :<br>
-Kode Dockerfile ini digunakan untuk mengubah aplikasi Flask menjadi container dengan Python 3.14 sebagai dasar, membuat direktori kerja /app, menyalin seluruh project ke dalam container, menginstall dependency, menginisialisasi database, membuka port 5000, dan menjalankan aplikasi Flask agar dapat diakses melalui browser secara konsisten di berbagai sistem.<br>
+Kode Dockerfile ini digunakan untuk mengubah aplikasi Flask menjadi container dengan Python 3.14 sebagai dasar, membuat direktori kerja /app, menyalin seluruh project ke dalam container, menginstall dependency, menginisialisasi database, membuka port 5000, dan menjalankan aplikasi Flask agar dapat diakses melalui browser.<br>
 
 Membuat Image :<br>
 <p align="center">
     <img width="940" height="680" alt="image" src="https://github.com/user-attachments/assets/7acc8d76-11e1-411e-9db6-5a99f6ebc50a" /><br>
+ 
 pembahasan :<br>
 Perintah ini digunakan untuk membangun Docker image berdasarkan Dockerfile. Nama image diberikan flaskr:1.0.0 sebagai identitas versi aplikasi container.<br>
 
@@ -74,28 +75,29 @@ Perintah docker images digunakan untuk menampilkan seluruh image yang tersedia p
    <img width="940" height="192" alt="image" src="https://github.com/user-attachments/assets/f79ab71d-cbd5-4524-b111-3f3343e06c3a" /><br>
 
 pembahasan :<br>
-Perintah ini menjalankan container dari image flaskr:1.0.0. Port 5001 pada localhost dipetakan ke port 5000 pada container sehingga aplikasi dapat diakses melalui browser pada localhost:5001.<br>
+Perintah docker run -p 5001:5000 flaskr:1.0.0 menjalankan container dari image flaskr:1.0.0. Port 5001 pada localhost dipetakan ke port 5000 pada container sehingga aplikasi dapat diakses melalui browser pada localhost:5001.<br>
 
    akses web browser :<br>
 <p align="center">   
    <img width="940" height="169" alt="image" src="https://github.com/user-attachments/assets/2422e5b9-9bf4-4883-a742-ab2937215f5d" /><br>
+ 
 Pada posisi ini, CA telah berhasil dijalankan.<br>
  
-**5. Buat Aplikasi Menjadi CA - Podman**<br>
+**5. Membuat Aplikasi Menjadi CA - Podman**<br>
 <p align="center">
    <img width="940" height="950" alt="image" src="https://github.com/user-attachments/assets/e82c4ce9-039b-4ab1-9219-af1fb8b0e1f7" />
 <p align="center">
    <img width="940" height="315" alt="image" src="https://github.com/user-attachments/assets/8b05fd46-ad65-48c2-9578-a0a83ab212fd" /><br>
 
 pembahasan :<br>
-Perintah ini membangun image container menggunakan Podman dengan Dockerfile yang sama. Podman berfungsi sebagai alternatif Docker tanpa bergantung pada daemon Docker.<br>
+Perintah  podman build -f Dockerfile -t flaskr:1.0.0 . membangun image container menggunakan Podman dengan Dockerfile yang sama.<br>
 
 image telah berhasil dibuat :<br>
 <p align="center">
    <img width="909" height="126" alt="image" src="https://github.com/user-attachments/assets/eb21cf54-18f1-4a44-a4f3-494b6350d66a" /><br>
 
 pembahasan :<br>
-Perintah ini digunakan untuk melihat daftar image yang telah berhasil dibuat pada Podman dan memastikan image flaskr:1.0.0 tersedia.<br>
+Perintah podman image ls digunakan untuk melihat daftar image yang telah berhasil dibuat pada Podman dan memastikan image flaskr:1.0.0 tersedia.<br>
 
 
 Jalankan dengan memetakan port 5000 pada aplikasi di container ke port 5001 di localhost:<br>
