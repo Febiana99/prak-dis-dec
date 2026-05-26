@@ -102,7 +102,8 @@ Hasil tersebut menunjukkan bahwa GraphQL server berhasil dijalankan dan siap men
 -Hasil Query pada Strawberry/GraphQL<br>
 <p align="center">
    <img width="840" height="498" alt="image" src="https://github.com/user-attachments/assets/3398c1fb-5853-4e60-9c7f-1aa331e54d37" /><br>
-   Hasil query menunjukkan bahwa GraphQL berhasil mengambil seluruh data produk dari tabel produk pada database SQLite.<br>
+   
+Hasil query menunjukkan bahwa GraphQL berhasil mengambil seluruh data produk dari tabel produk pada database SQLite.<br>
 
 
 2. Dengan menggunakan file SQLite pada tugas kemarin (tabel yang mempunyai 1 primary key dan setidaknya berisi data dengan tipe INT, CHAR, VARCHAR, BOOLEAN, dan FLOAT), buat service.proto untuk semua data tersebut, kompilasi, buat gRPC servernya dan kemudian berikan contoh gRPC client untuk mengambil salah satu data.<br>
