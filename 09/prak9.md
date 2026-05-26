@@ -82,3 +82,98 @@ Jalankan dengan perintah berikut:
 
 
 **3. Tugas**
+1. Dengan menggunakan file SQLite pada tugas kemarin (tabel yang mempunyai 1 primary key dan setidaknya berisi data dengan tipe INT, CHAR, VARCHAR, BOOLEAN, dan FLOAT), buat GraphQL endpoint untuk tabel tersebut dan berikan contoh akses client untuk mengambil semua data.
+langkah-langkahnya :<br>
+-isi file tugas.py<br>
+<p align="center">
+  <img width="600" height="894" alt="image" src="https://github.com/user-attachments/assets/50709f62-541c-4508-99f2-c68a42cba580" /><br>
+
+<p align="center">
+   <img width="600" height="894" alt="image" src="https://github.com/user-attachments/assets/edea405d-a7ea-43f1-84ea-1fadf1718add" /><br>
+File tugas.py digunakan untuk membuat GraphQL endpoint dan mengambil data produk dari database SQLite toko.db.<br>
+
+- Hasil Menjalankan uvicorn<br>
+<p align="center">
+  <img width="600" height="206" alt="image" src="https://github.com/user-attachments/assets/d3805933-4f3a-4b5c-8f55-b3f58ac4929b" /><br>
+
+Hasil tersebut menunjukkan bahwa GraphQL server berhasil dijalankan dan siap menerima query dari client.<br>
+
+-  Hasil query menunjukkan bahwa GraphQL berhasil mengambil seluruh data produk dari tabel produk pada database SQLite.<br>
+<p align="center">
+   <img width="940" height="598" alt="image" src="https://github.com/user-attachments/assets/3398c1fb-5853-4e60-9c7f-1aa331e54d37" /><br>
+
+
+2. Dengan menggunakan file SQLite pada tugas kemarin (tabel yang mempunyai 1 primary key dan setidaknya berisi data dengan tipe INT, CHAR, VARCHAR, BOOLEAN, dan FLOAT), buat service.proto untuk semua data tersebut, kompilasi, buat gRPC servernya dan kemudian berikan contoh gRPC client untuk mengambil salah satu data.<br>
+langkah-langkahnya :<br>
+- Membuat Folder gRPC<br>
+<p align="center">
+  <img width="360" height="91" alt="image" src="https://github.com/user-attachments/assets/49a0d3e1-7b89-40b7-9e23-df6ffa3fb9dc" /><br>
+
+Perintah ini digunakan untuk membuat folder server dan client. Folder server digunakan untuk menyimpan program gRPC server, sedangkan folder client digunakan untuk menyimpan program client yang akan meminta data ke server.<br>
+
+- Masuk ke Folder Server<br>
+<p align="center">
+  <img width="300" height="45" alt="image" src="https://github.com/user-attachments/assets/d60d6543-3a47-4dfa-bf65-06e13230333f" /><br>
+
+Masuk ke folder server agar semua file dan package gRPC server dibuat di lokasi tersebut.<br>
+
+- Copy Database SQLite<br>
+<p align="center">
+  <img width="400" height="53" alt="image" src="https://github.com/user-attachments/assets/a6973d88-15f5-4cf6-a992-bcf8c1ee6262" /><br>
+  
+Database toko.db dari praktikum sebelumnya disalin ke folder server agar server gRPC dapat membaca data produk dari database tersebut.<br>
+
+- isi file service proto<br>
+<p align="center">
+  <img width="556" height="472" alt="image" src="https://github.com/user-attachments/assets/44dad2ea-969d-49f0-9077-f37b9a5a66c2" /><br>
+
+File service.proto digunakan untuk mendefinisikan service gRPC, request, dan response yang akan dipakai antara server dan client. Pada tugas ini dibuat method GetProduk untuk mengambil data produk berdasarkan ID.<br>
+
+- Compile File Proto<br>
+<p align="center">
+  <img width="755" height="57" alt="image" src="https://github.com/user-attachments/assets/b029a769-89c8-421f-91a2-1894dc32f6f5" /><br>
+
+Perintah ini digunakan untuk mengubah file service.proto menjadi file Python otomatis yang nantinya digunakan oleh server dan client gRPC.<br>
+
+- Mengecek Hasil Compile<br>
+<p align="center"> 
+  <img width="682" height="88" alt="image" src="https://github.com/user-attachments/assets/517d3c92-bdfd-40db-a02b-30b658be5df0" /><br>
+
+  File service_pb2.py dan service_pb2_grpc.py merupakan file hasil compile proto yang berfungsi untuk komunikasi data antara server dan client.<br>
+  
+- isi file server.py<br>
+<p align="center">
+  <img width="678" height="876" alt="image" src="https://github.com/user-attachments/assets/dcb0cd99-cb8c-49a7-afb7-dfb6d4ea64d1" /><br>
+
+File server.py digunakan untuk membuat server gRPC. Server akan membaca data produk dari database toko.db berdasarkan ID yang diminta client, lalu mengirimkan hasilnya kembali ke client.<br>
+
+- Menjalankan gRPC Server<br>
+<p align="center">
+   <img width="502" height="57" alt="image" src="https://github.com/user-attachments/assets/42274f00-7517-4cb7-9ee2-397fb58c1c20" /><br>
+
+Perintah ini digunakan untuk menjalankan server gRPC pada port 50051 agar dapat menerima request dari client.<br>
+
+- Masuk ke Folder Client<br>
+<p align="center">
+   <img width="407" height="58" alt="image" src="https://github.com/user-attachments/assets/959b06c4-ad0b-40fd-82d5-50e9e730e850" /><br>
+
+Masuk ke folder client untuk membuat program client gRPC.<br>
+
+-  Copy File Hasil Compile Proto<br>
+<p align="center">
+  <img width="457" height="70" alt="image" src="https://github.com/user-attachments/assets/65bad139-9039-483b-8149-7232ba0238e9" /><br>
+
+File hasil compile dari server disalin ke client agar client dapat menggunakan struktur request dan response yang sama dengan server.<br>
+
+-  isi file client.py<br>
+<p align="center">
+  <img width="687" height="387" alt="image" src="https://github.com/user-attachments/assets/abd74e47-6489-46af-b864-8f07b4b6c4ea" /><br>
+
+File client.py digunakan untuk membuat client gRPC yang mengirim request ke server untuk mengambil data produk berdasarkan ID.<br>
+
+- Menjalankan gRPC Client<br>
+<p align="center">
+  <img width="517" height="175" alt="image" src="https://github.com/user-attachments/assets/c5ea6794-919b-4a2b-9007-6e22a472348e" /><br>
+
+Hasil tersebut menunjukkan bahwa client berhasil mengambil salah satu data produk dari database SQLite melalui gRPC server.<br>
+
