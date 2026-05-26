@@ -82,14 +82,15 @@ Jalankan dengan perintah berikut:
 
 
 **3. Tugas**
-1. Dengan menggunakan file SQLite pada tugas kemarin (tabel yang mempunyai 1 primary key dan setidaknya berisi data dengan tipe INT, CHAR, VARCHAR, BOOLEAN, dan FLOAT), buat GraphQL endpoint untuk tabel tersebut dan berikan contoh akses client untuk mengambil semua data.
+1. Dengan menggunakan file SQLite pada tugas kemarin (tabel yang mempunyai 1 primary key dan setidaknya berisi data dengan tipe INT, CHAR, VARCHAR, BOOLEAN, dan FLOAT), buat GraphQL endpoint untuk tabel tersebut dan berikan contoh akses client untuk mengambil semua data.<br>
 langkah-langkahnya :<br>
 -isi file tugas.py<br>
 <p align="center">
-  <img width="600" height="894" alt="image" src="https://github.com/user-attachments/assets/50709f62-541c-4508-99f2-c68a42cba580" /><br>
+  <img width="700" height="894" alt="image" src="https://github.com/user-attachments/assets/50709f62-541c-4508-99f2-c68a42cba580" /><br>
 
 <p align="center">
-   <img width="600" height="894" alt="image" src="https://github.com/user-attachments/assets/edea405d-a7ea-43f1-84ea-1fadf1718add" /><br>
+   <img width="700" height="894" alt="image" src="https://github.com/user-attachments/assets/edea405d-a7ea-43f1-84ea-1fadf1718add" /><br>
+   
 File tugas.py digunakan untuk membuat GraphQL endpoint dan mengambil data produk dari database SQLite toko.db.<br>
 
 - Hasil Menjalankan uvicorn<br>
@@ -98,9 +99,10 @@ File tugas.py digunakan untuk membuat GraphQL endpoint dan mengambil data produk
 
 Hasil tersebut menunjukkan bahwa GraphQL server berhasil dijalankan dan siap menerima query dari client.<br>
 
--  Hasil query menunjukkan bahwa GraphQL berhasil mengambil seluruh data produk dari tabel produk pada database SQLite.<br>
+-Hasil Query pada Strawberry/GraphQL<br>
 <p align="center">
-   <img width="940" height="598" alt="image" src="https://github.com/user-attachments/assets/3398c1fb-5853-4e60-9c7f-1aa331e54d37" /><br>
+   <img width="840" height="498" alt="image" src="https://github.com/user-attachments/assets/3398c1fb-5853-4e60-9c7f-1aa331e54d37" /><br>
+   Hasil query menunjukkan bahwa GraphQL berhasil mengambil seluruh data produk dari tabel produk pada database SQLite.<br>
 
 
 2. Dengan menggunakan file SQLite pada tugas kemarin (tabel yang mempunyai 1 primary key dan setidaknya berisi data dengan tipe INT, CHAR, VARCHAR, BOOLEAN, dan FLOAT), buat service.proto untuk semua data tersebut, kompilasi, buat gRPC servernya dan kemudian berikan contoh gRPC client untuk mengambil salah satu data.<br>
@@ -129,13 +131,13 @@ Database toko.db dari praktikum sebelumnya disalin ke folder server agar server 
 
 File service.proto digunakan untuk mendefinisikan service gRPC, request, dan response yang akan dipakai antara server dan client. Pada tugas ini dibuat method GetProduk untuk mengambil data produk berdasarkan ID.<br>
 
-- Compile File Proto<br>
+- kompilasi File Proto<br>
 <p align="center">
   <img width="755" height="57" alt="image" src="https://github.com/user-attachments/assets/b029a769-89c8-421f-91a2-1894dc32f6f5" /><br>
 
 Perintah ini digunakan untuk mengubah file service.proto menjadi file Python otomatis yang nantinya digunakan oleh server dan client gRPC.<br>
 
-- Mengecek Hasil Compile<br>
+- Mengecek Hasil kompilasi<br>
 <p align="center"> 
   <img width="682" height="88" alt="image" src="https://github.com/user-attachments/assets/517d3c92-bdfd-40db-a02b-30b658be5df0" /><br>
 
@@ -143,7 +145,7 @@ Perintah ini digunakan untuk mengubah file service.proto menjadi file Python oto
   
 - isi file server.py<br>
 <p align="center">
-  <img width="678" height="876" alt="image" src="https://github.com/user-attachments/assets/dcb0cd99-cb8c-49a7-afb7-dfb6d4ea64d1" /><br>
+  <img width="578" height="776" alt="image" src="https://github.com/user-attachments/assets/dcb0cd99-cb8c-49a7-afb7-dfb6d4ea64d1" /><br>
 
 File server.py digunakan untuk membuat server gRPC. Server akan membaca data produk dari database toko.db berdasarkan ID yang diminta client, lalu mengirimkan hasilnya kembali ke client.<br>
 
@@ -167,7 +169,7 @@ File hasil compile dari server disalin ke client agar client dapat menggunakan s
 
 -  isi file client.py<br>
 <p align="center">
-  <img width="687" height="387" alt="image" src="https://github.com/user-attachments/assets/abd74e47-6489-46af-b864-8f07b4b6c4ea" /><br>
+  <img width="587" height="287" alt="image" src="https://github.com/user-attachments/assets/abd74e47-6489-46af-b864-8f07b4b6c4ea" /><br>
 
 File client.py digunakan untuk membuat client gRPC yang mengirim request ke server untuk mengambil data produk berdasarkan ID.<br>
 
