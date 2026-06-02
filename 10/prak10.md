@@ -130,27 +130,27 @@ Perintah di atas digunakan untuk melihat proses pencarian data berdasarkan nilai
 **Hash Sharding**<br>
 Hash sharding tidak sesuai untuk hasil pembacaan berupa range.<br>
 
-Membuat Tabel user_hash<br>
+- Membuat Tabel user_hash<br>
 <p align="center">
 <img width="940" height="370" alt="image" src="https://github.com/user-attachments/assets/2c624fa1-0e51-480c-b059-48bf644f0846" /><br>
 
 Pada tahap ini dibuat tabel user_hash yang menggunakan hash sharding pada primary key. Mekanisme hash sharding akan mendistribusikan data ke beberapa tablet berdasarkan hasil perhitungan hash sehingga distribusi data menjadi lebih merata.<br>
 
-EXPLAIN Query Seluruh Data pada user_hash<br>
+- EXPLAIN Query Seluruh Data pada user_hash<br>
 <p align="center">
 <img width="940" height="553" alt="image" src="https://github.com/user-attachments/assets/d51d737c-50bf-49d8-9cc3-cd56d14197b0" /><br>
 
 Perintah ini digunakan untuk melihat proses pengambilan seluruh data pada tabel yang menggunakan hash sharding. Karena data tersebar pada beberapa tablet, YugabyteDB akan melakukan pembacaan pada seluruh tablet yang terkait untuk memperoleh seluruh data yang tersedia.<br>
 kesimpulannya : Data yang dibaca adalah seluruh baris yang terdapat pada tabel
 
-EXPLAIN Query Satu Baris pada user_hash<br> 
+- EXPLAIN Query Satu Baris pada user_hash<br> 
 <p align="center">
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/3a75dc2f-d8d6-42e3-b4aa-463b8e544327" /><br>
 
 Perintah ini digunakan untuk melihat proses pencarian data berdasarkan nilai primary key tertentu. Karena menggunakan primary key, YugabyteDB dapat langsung menemukan lokasi data yang dicari tanpa melakukan pembacaan seluruh isi tabel sehingga proses pencarian menjadi lebih cepat dan efisien.<br>
 kesimpulannya : Data yang dibaca hanya satu baris sesuai dengan kondisi query.<br>
 
-EXPLAIN Query rentang data<br>
+- EXPLAIN Query rentang data<br>
 <p align="center">
 <img width="940" height="448" alt="image" src="https://github.com/user-attachments/assets/1b5785b0-af8c-4a85-924a-fa1b6cfdf6a9" /><br>
   
