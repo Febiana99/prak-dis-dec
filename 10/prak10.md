@@ -105,26 +105,27 @@ untuk setiap query berikut :<br>
 <p align="center">
 <img width="940" height="558" alt="image" src="https://github.com/user-attachments/assets/bd18a94e-d55d-4813-bf86-a4e8fd877dfc" /><br>
 
-Perintah ini digunakan untuk melihat cara YugabyteDB mengeksekusi query yang mengambil seluruh data pada tabel. Hasil EXPLAIN menunjukkan bahwa sistem membaca seluruh baris yang terdapat pada tabel<br>
+Perintah di atas digunakan untuk melihat cara YugabyteDB mengeksekusi query yang mengambil seluruh data pada tabel. Hasil EXPLAIN menunjukkan bahwa sistem membaca seluruh baris yang terdapat pada tabel<br>
 Kesimpulannya : Data yang dibaca adalah seluruh baris yang terdapat pada tabel.<br>
 
 <p align="center">
 <img width="940" height="535" alt="image" src="https://github.com/user-attachments/assets/0cdc617f-cc73-4219-a22d-0a6abf3a373c" /><br>
 
-Perintah ini digunakan untuk melihat proses pencarian data berdasarkan nilai primary key tertentu. Karena menggunakan primary key, YugabyteDB dapat langsung menemukan lokasi data yang dicari tanpa melakukan pembacaan seluruh isi tabel sehingga proses pencarian menjadi lebih cepat dan efisien<br>
+Perintah di atas digunakan untuk melihat proses pencarian data berdasarkan nilai primary key tertentu. Karena menggunakan primary key, YugabyteDB dapat langsung menemukan lokasi data yang dicari tanpa melakukan pembacaan seluruh isi tabel sehingga proses pencarian menjadi lebih cepat dan efisien<br>
 kesimpulannya : Data yang dibaca hanya satu baris sesuai dengan kondisi query.<br>
 
 <p align="center">
 <img width="940" height="468" alt="image" src="https://github.com/user-attachments/assets/66a08cf9-d9c5-4561-a80f-6c1a57d6109b" /><br>
                                  
-Pada query ini sistem melakukan pencarian berdasarkan rentang nilai primary key. YugabyteDB hanya membaca data yang sesuai dengan kondisi yang diberikan sehingga proses akses data menjadi lebih efisien dibandingkan membaca seluruh tabel.<br>
+Pada query di atas sistem melakukan pencarian berdasarkan rentang nilai primary key. YugabyteDB hanya membaca data yang sesuai dengan kondisi yang diberikan sehingga proses akses data menjadi lebih efisien dibandingkan membaca seluruh tabel.<br>
 kesimpulannya : Data yang dibaca hanya baris yang memenuhi kondisi rentang nilai yang ditentukan.<br>
 
 Untuk tabel yang di-split menjadi beberapa tablet, waktu eksekusi akan lebih cepat untuk query yang sudah diketahui berdasarkan kolom tertentu dan split dilakukan berdasarkan kolom tersebut:<br>
+
 <p align="center">
 <img width="940" height="544" alt="image" src="https://github.com/user-attachments/assets/3672af31-95d9-47f6-b6f9-79b07e6b9a88" /><br>
 
-Perintah ini digunakan untuk melihat proses pencarian data berdasarkan nilai primary key tertentu. Karena menggunakan primary key, YugabyteDB dapat langsung menemukan lokasi data yang dicari tanpa melakukan pembacaan seluruh isi tabel sehingga proses pencarian menjadi lebih cepat dan efisien.<br>
+Perintah di atas digunakan untuk melihat proses pencarian data berdasarkan nilai primary key tertentu. Karena menggunakan primary key, YugabyteDB dapat langsung menemukan lokasi data yang dicari tanpa melakukan pembacaan seluruh isi tabel sehingga proses pencarian menjadi lebih cepat dan efisien.<br>
 
 **Hash Sharding**<br>
 Hash sharding tidak sesuai untuk hasil pembacaan berupa range.<br>
