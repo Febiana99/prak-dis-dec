@@ -1,23 +1,25 @@
-<h1>Praktikum Sistem Terdistribusi dan Terdesentralisasi Pert09</h1>
+<h1>Praktikum Sistem Terdistribusi dan Terdesentralisasi Pert10</h1>
 Nama : Febiana Serao Da Cruz<br>
 NIM: 235410032
 
-<h3>Data Terdistribusi</h3>
+<h3>Data Terdistribusi </h3>
 
 **1. Instalasi**<br>
 **Ekstraksi**<br>
 <p align="center">
-   <img width="840" height="221" alt="image" src="https://github.com/user-attachments/assets/f7dcb66e-022b-40f2-8059-e6eb712926b5" />
+  <img width="727" height="755" alt="image" src="https://github.com/user-attachments/assets/efcc13fc-fd3d-43da-9df1-e64658686e4c" /><br>
+Pada tahap ini dilakukan ekstraksi file instalasi YugabyteDB menggunakan perintah tar -xvf yugabyte-2.25.1.0-b381-linux-x86_64.tar.gz. Sebelum ekstraksi, perintah ls -la digunakan untuk memastikan file instalasi tersedia pada direktori kerja. Hasil ekstraksi berupa folder Yugabyte yang akan digunakan pada tahap berikutnya.
 
 **Buat symlink**<br>
   <p align="center">
-<img width="840" height="590" alt="image" src="https://github.com/user-attachments/assets/f8ee6afa-b1b0-4ed2-a035-82f77b2b64d6" />
+<img width="840" height="590" alt="image" src="https://github.com/user-attachments/assets/f8ee6afa-b1b0-4ed2-a035-82f77b2b64d6" /><br>
+Pada tahap ini dibuat symbolic link (symlink) untuk mempermudah akses ke direktori YugabyteDB. Hasil pembuatan symlink dapat diverifikasi menggunakan perintah ls -la.
 
 
 **Kerjakan post_install.sh**<br>
   <p align="center">
-<img width="840" height="828" alt="image" src="https://github.com/user-attachments/assets/552222bc-8803-4016-a399-8a4f28a30257" />
-
+<img width="840" height="828" alt="image" src="https://github.com/user-attachments/assets/552222bc-8803-4016-a399-8a4f28a30257" /><br>
+post_install.sh dijalankan untuk melakukan konfigurasi tambahan yang diperlukan oleh YugabyteDB. Proses ini juga memeriksa beberapa komponen yang dibutuhkan sistem.
 
 **Buat file untuk env variables**<br>
 <img width="840" height="71" alt="image" src="https://github.com/user-attachments/assets/f9ea3486-021f-49db-9f33-608098337217" />
