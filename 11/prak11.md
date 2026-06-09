@@ -3,5 +3,6 @@ Nama : Febiana Serao Da Cruz<br>
 NIM: 235410032
 
 <h3>Sistem Terdesentralisasi, Blockchain dan Web 3.0</h3>
-1. Cara Kerja Blockchain
+1. Cara Kerja Blockchain<br>
+
 2. Pengenalan Blockchain dan Ethereum
