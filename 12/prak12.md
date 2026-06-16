@@ -74,7 +74,7 @@ Tugas :
 
 2. Program menghasilkan output tersebut karena membaca metadata yang tersimpan di dalam file .torrent menggunakan library bcoding. Data yang berhasil dibaca kemudian ditampilkan berupa URL tracker, nama file, ukuran file, ukuran piece, nilai info hash yang dihitung, serta jumlah piece yang digunakan untuk membagi file.
 
-3. - sourcode yang di ubah :<br>
+3. sourcode yang di ubah :<br>
   <img width="515" height="177" alt="image" src="https://github.com/user-attachments/assets/b6ddc705-61f7-446a-af36-9c8ea7799392" /><br>
 
 hasil saat menjalankan python read_torrent.py FreeBSD-15.0-RELEASE-amd64-bootonly.iso.torrent.torrent<br>
