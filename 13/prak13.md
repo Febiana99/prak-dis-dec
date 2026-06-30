@@ -21,7 +21,7 @@ Catat BIP39 Passphrase yang digunakan serta seed phrase (ada di bagian bawah - d
 <img width="692" height="306" alt="image" src="https://github.com/user-attachments/assets/941bba60-3309-420f-9724-4f9f94d8337b" /><br>
 
 Berikut adalah alamat yang dihasilkan:<br>
-<img width="990" height="175" alt="image" src="https://github.com/user-attachments/assets/120eca8b-b3c3-4e4e-a847-c55ecd43550e" />
+<img width="700" height="125" alt="image" src="https://github.com/user-attachments/assets/120eca8b-b3c3-4e4e-a847-c55ecd43550e" />
 
 
 **2. Konsensus pada Solana Blockchain**<br>
