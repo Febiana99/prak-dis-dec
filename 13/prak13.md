@@ -25,6 +25,13 @@ Berikut adalah alamat yang dihasilkan:<br>
 
 
 **2. Konsensus pada Solana Blockchain**<br>
+Solana mampu memproses hingga puluhan ribu transaksi per detik (TPS) dengan biaya yang sangat murah. Kunci utama untuk efisiensi Solana tersebut terletak pada arsitektur konsensus yang merupakan penggabungan antara Proof of Stake (PoS) dan Proof of History (PoH). PoS berfungsi sebagai lapisan keamanan untuk menentukan validator berdasarkan jumlah token yang dipertaruhkan (stake), PoH bertindak sebagai "jam digital kriptografis" yang mencatat urutan waktu dan jalannya setiap transaksi secara berurutan sebelum konsensus PoS dimulai. Dengan adanya pembuktian waktu historis yang terintegrasi ini, para validator di seluruh dunia tidak perlu lagi saling berkomunikasi secara intensif hanya untuk menyepakati kapan sebuah transaksi terjadi, sehingga proses finalisasi data dapat berjalan jauh lebih cepat dan sinkron.<br>
+
 **3. Memperoleh SOL dari Devnet**<br>
+a. Atur akses Solana ke Devnet:<br>
+<img width="732" height="356" alt="image" src="https://github.com/user-attachments/assets/7bc2796d-bd71-440f-a763-4f8f64a9e883" /><br>
+
+b. Airdrop dan Cek Saldo.
+
 **4. Alur Konsensus pada Solana Blockchain**<br>
 
