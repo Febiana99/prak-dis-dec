@@ -6,9 +6,9 @@ NIM: 235410032
 
 **1. Instalasi dan persiapan**<br>
 Solana juga mengembangkan framework untuk DApp berbasis Solana dengan nama Anchor (https://www.anchor-lang.com/docs - https://github.com/otter-sec/anchor). Install Anchor berikut ini:<br>
-<img width="740" height="206" alt="image" src="https://github.com/user-attachments/assets/2f09d60d-303c-4fe1-b2b0-ac60aadeb74d" /><br>
+<img width="840" height="306" alt="image" src="https://github.com/user-attachments/assets/2f09d60d-303c-4fe1-b2b0-ac60aadeb74d" /><br>
 
-<img width="578" height="258" alt="image" src="https://github.com/user-attachments/assets/69944a3f-2dd4-4f79-90c3-de57c1170b18" /><br>
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/69944a3f-2dd4-4f79-90c3-de57c1170b18" /><br>
 
 <img width="740" height="424" alt="image" src="https://github.com/user-attachments/assets/781f52fa-7a3d-470c-9532-e4cb3020141a" /><br>
 Setelah proses instalasi tersebut, Anchor telah terinstall sesuai versi terakhir. Jika ingin mengubah versi, gunakan avm. Hasil akhir:<br>
